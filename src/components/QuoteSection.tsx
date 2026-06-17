@@ -79,6 +79,7 @@ export const QuoteSection: React.FC = () => {
         }`}
         role="status"
         aria-live="polite"
+        aria-hidden={!showToast}
       >
         Thanks{submittedName ? `, ${submittedName}` : ""}. We'll be in touch
         soon!
@@ -94,6 +95,7 @@ export const QuoteSection: React.FC = () => {
 
           <form
             className="mt-10 grid gap-4 md:grid-cols-2"
+            noValidate
             onSubmit={handleSubmit}
           >
             <div>

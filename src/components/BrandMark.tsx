@@ -3,8 +3,7 @@ export const BrandMark: React.FC = () => {
     <svg
       className="h-9 w-9 shrink-0"
       viewBox="0 0 64 64"
-      role="img"
-      aria-label="Briar and Branch Co. logo"
+      aria-hidden="true"
     >
       <rect width="64" height="64" rx="18" className="fill-gold" />
       <path

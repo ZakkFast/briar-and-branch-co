@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
           className="focus-ring flex items-center gap-3 text-lg font-bold tracking-tight"
         >
           <BrandMark />
-          <span>Briar & Branch Co.</span>
+          <span className="hidden sm:inline">Briar & Branch Co.</span>
         </a>
 
         <div className="hidden items-center gap-8 text-sm font-medium md:flex">
@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
           </a>
         </div>
 
-        <a href="#quote" className="btn-primary px-4 py-2 text-sm">
+        <a href="#quote" className="btn-primary px-3 py-2 text-sm sm:px-4">
           Request Quote
         </a>
       </nav>
