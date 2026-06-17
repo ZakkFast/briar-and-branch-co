@@ -1,5 +1,7 @@
 # Briar & Branch Co.
 
+[Live Preview](https://briar-and-branch-co.vercel.app/)
+
 A responsive landing page concept for a fictional tree care and storm cleanup company.
 
 Built with React, TypeScript, Vite, and Tailwind CSS.
