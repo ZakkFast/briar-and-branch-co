@@ -4,6 +4,8 @@ A responsive landing page concept for a fictional tree care and storm cleanup co
 
 Built with React, TypeScript, Vite, and Tailwind CSS.
 
+<img width="1456" height="721" alt="Screenshot 2026-06-17 at 6 31 15 PM" src="https://github.com/user-attachments/assets/99551202-9095-4c62-a4e5-d8afb8090935" />
+
 ## Development
 
 Install dependencies:
