@@ -1,9 +1,15 @@
+import { BrandMark } from "./BrandMark";
+
 export const Header: React.FC = () => {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-forest/95 text-cream backdrop-blur">
       <nav className="section-container flex items-center justify-between px-6 py-4">
-        <a href="#" className="focus-ring text-lg font-bold tracking-tight">
-          Briar & Branch Co.
+        <a
+          href="#"
+          className="focus-ring flex items-center gap-3 text-lg font-bold tracking-tight"
+        >
+          <BrandMark />
+          <span>Briar & Branch Co.</span>
         </a>
 
         <div className="hidden items-center gap-8 text-sm font-medium md:flex">
