@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+@theme {
+  --color-forest: #10251d;
+  --color-leaf: #18392b;
+  --color-cream: #f7f1e3;
+  --color-stone: #e4ded0;
+  --color-gold: #c9a45c;
+  --color-gold-light: #d7b86d;
+  --color-bark: #6b4f3a;
+}
+
+@layer components {
+  .section-shell {
+    @apply px-6 py-24;
+  }
+
+  .section-container {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .section-label {
+    @apply text-sm font-semibold uppercase tracking-[0.3em];
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+  }
+
+  .btn-primary {
+    @apply rounded-full bg-gold font-semibold text-forest transition-colors hover:bg-gold-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+  }
+
+  .btn-secondary {
+    @apply rounded-full border border-cream/30 text-center font-semibold text-cream transition-colors hover:border-gold hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+  }
+
+  .form-input {
+    @apply rounded-2xl border border-white/10 bg-white/10 px-4 py-3 outline-none transition-colors placeholder:text-stone/60 focus:border-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+  }
+}
