@@ -38,4 +38,27 @@
   .form-input {
     @apply rounded-2xl border border-white/10 bg-white/10 px-4 py-3 outline-none transition-colors placeholder:text-stone/60 focus:border-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
   }
+
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition:
+      opacity 600ms ease,
+      transform 600ms ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
